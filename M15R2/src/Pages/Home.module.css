@@ -1,0 +1,81 @@
+.container{
+    margin:auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,250px);
+    grid-gap: 25px;
+}
+
+.navbar{
+    background-color: yellowgreen;
+    position: relative;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.content {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.spinner {
+    margin:auto;
+}
+
+.btn {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+/* <!-- HTML !--> */
+/* <button class="button-24" role="button">Button 24</button> */
+
+/* CSS */
+.btn {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:420px){
+    .container{
+        grid-template-columns: repeat(2,250px);
+        margin-left: 1%;
+    }
+
+
+}
+@media only screen and (min-width:421px) and (max-width:720px){
+    .container{
+        grid-template-columns: repeat(3,250px);
+        
+    }
+}
